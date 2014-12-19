@@ -1,0 +1,31 @@
+import java.awt.*;
+import javax.swing.*;
+import java.util.*;
+
+
+public class CircleTester 
+{
+	public static void main(String[] args) 
+	{
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Please enter an x and y coordinate");
+		int x = reader.nextInt();
+		int y = reader.nextInt();
+		Circle One = new Circle(x, y);
+		JFrame frame = new JFrame();
+		frame.setSize(1000, 1000);
+		
+		frame.setTitle("A Circle");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.add(One);
+		frame.setVisible(true);
+	}
+	
+	
+
+}
+
+
+
+
+                                                                

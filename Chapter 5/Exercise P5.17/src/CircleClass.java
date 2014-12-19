@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import javax.swing.JFrame;
+
+public class CircleClass 
+{
+	public static void main(String[] args) 
+	{
+		Scanner reader = new Scanner(System.in);
+		JFrame Frame = new JFrame();
+		
+		System.out.println("Enter 1 Radii: ");
+		double Radii1 = reader.nextDouble();
+		System.out.println("Enter 2 Radii:");
+		double Radii2 = reader.nextDouble();
+		
+		DrawCirclesClass newCircle = new DrawCirclesClass(Radii1, Radii2);
+		
+		Frame.setSize(1000, 1000);
+		Frame.setTitle("Circle Window");
+		Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Frame.add(newCircle);
+		Frame.setVisible(true);
+	}
+}

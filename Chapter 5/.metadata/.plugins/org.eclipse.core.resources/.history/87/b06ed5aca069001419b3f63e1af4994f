@@ -1,0 +1,22 @@
+import java.util.*;
+import java.io.*;
+
+public class RoundNum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner IN = new Scanner(System.in);
+		
+		System.out.print("Enter Num: ");
+		double num1 = IN.nextDouble();
+		System.out.print("Enter Num: ");
+		double num2 = IN.nextDouble();
+		
+		double numcheck = num1- num2;
+		numcheck = Math.abs(numcheck);
+		
+		System.out.print(numcheck);
+		
+	}
+
+}

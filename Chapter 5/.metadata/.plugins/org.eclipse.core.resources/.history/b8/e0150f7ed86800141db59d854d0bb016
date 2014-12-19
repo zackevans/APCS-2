@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+
+public class SortNum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner IN = new Scanner(System.in);
+		
+		System.out.print("Enter a number: ");
+		double num1 = IN.nextDouble();
+		System.out.print("Enter a number: ");
+		double num2 = IN.nextDouble();
+		System.out.print("Enter a number: ");
+		double num3 = IN.nextDouble();
+		
+		if (num1 < num2)
+		{
+			System.out.println(num1);
+			
+			if (num2 < num3)
+			{
+				System.out.println(num2);
+				System.out.println(num3);
+			}
+			
+			if (num2 > num3)
+			{
+				System.out.println(num3);
+				System.out.println(num2);
+			}
+		}
+		
+		if (num1 > num2)
+		{
+			
+		}
+	}
+}

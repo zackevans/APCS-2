@@ -1,0 +1,98 @@
+import java.util.*;
+
+public class UnitConvert 
+{
+	static final double in = 39.3701;
+	static final double ft = 3.28084;
+	static final double mi = .000621371;
+	static final double mm = 1000;
+	static final double cm = 100;
+	static final double m = 1;
+	static final double km = .001;
+	
+	public static void main(String[] args) 
+	{
+		Scanner IN = new Scanner(System.in);
+		// TODO in,ft,mi,mm,cm,m,km
+		System.out.print("Enter Num: ");
+		double num1 = IN.nextDouble();
+		System.out.print("Unit From: ");
+		String unit1 = IN.next();
+		System.out.print("Unit To: ");
+		String unit2 = IN.next();
+		
+		if (unit1.equals("in"))
+		{
+			 num1 = num1 * in;
+		}
+		
+		if (unit1.equals("ft"))
+		{
+			num1 = num1 * ft;
+		}
+		
+		if (unit1.equals("mi"))
+		{
+			num1 = num1 * mi;
+		}
+		
+		if (unit1.equals("mm"))
+		{
+			num1 = num1 * mm;
+		}
+		
+		if (unit1.equals("cm"))
+		{
+			num1 = num1 * cm;
+		}
+		
+		if (unit1.equals("m"))
+		{
+			num1 = num1 * m;
+		}
+		
+		if (unit1.equals("km"))
+		{
+			num1 = num1 * km;
+		}
+		
+		// Convert back to the 2 unit 
+		if (unit2.equals("in"))
+		{
+			 num1 = num1 * in;
+		}
+		
+		if (unit2.equals("ft"))
+		{
+			num1 = num1 * ft;
+		}
+		
+		if (unit2.equals("mi"))
+		{
+			num1 = num1 * mi;
+		}
+		
+		if (unit2.equals("mm"))
+		{
+			num1 = num1 * mm;
+		}
+		
+		if (unit2.equals("cm"))
+		{
+			num1 = num1 * cm;
+		}
+		
+		if (unit2.equals("m"))
+		{
+			num1 = num1 * m;
+		}
+		
+		if (unit2.equals("km"))
+		{
+			num1 = num1 * km;
+		}
+		
+		System.out.printf("Answer: %d Unit: %d",num1,unit2);
+		
+	}
+}

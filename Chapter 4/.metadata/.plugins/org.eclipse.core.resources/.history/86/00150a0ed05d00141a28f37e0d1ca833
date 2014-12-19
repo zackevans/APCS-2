@@ -1,0 +1,21 @@
+import java.util.*;
+import java.io.*;
+
+public class intread 
+{
+	public static void main(String[] args) 
+	{
+		Scanner IN = new Scanner(System.in);
+		
+		System.out.print("Enter Numbers: ");
+		String UserInput = IN.next();
+		
+		for (int i = 0;UserInput.length()<=0;i--)
+		{
+			System.out.println("hi");
+			
+			//System.out.println(UserInput.charAt(i));
+		}
+	}
+
+}

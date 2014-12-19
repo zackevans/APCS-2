@@ -1,0 +1,35 @@
+import java.util.*;
+import java.io.*;
+
+public class TimeConvert 
+{
+	private double hours, hours2, minutes, minutes2,totMinutes;
+	public TimeConvert(double timeOne, double timeTwo)
+	{
+		timeOne=timeOne/100;
+		timeTwo=timeTwo/100;
+		hours = timeOne;
+		hours2 = timeTwo;
+		
+		minutes = timeOne-Math.floor(timeOne);
+		minutes2 = timeTwo-Math.floor(timeTwo);
+		totMinutes=(minutes+minutes2)*100;
+	}
+	public double getHours()
+	{
+		double differenceHours = Math.floor(Math.abs(hours2-hours));
+		return differenceHours;
+	}
+	public double getMinutes()
+	{
+		double differenceMinutes = Math.abs(totMinutes);
+		return differenceMinutes;
+	}
+	public static void main(String[] args)
+	{
+		TimeInterval time = new TimeInterval(900, 1100);
+		System.out.println(time.getHours()+" hours");
+		System.out.println(time.getMinutes()+" minutes");
+	}
+
+}

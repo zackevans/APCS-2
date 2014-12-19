@@ -1,0 +1,19 @@
+import java.util.*;
+public class UnitConvert 
+{
+	public static void main(String[] args) 
+	{
+		Scanner IN = new Scanner(System.in);
+		
+		System.out.print("Enter Num: ");
+		double num1 = IN.nextDouble();
+		System.out.print("Enter Unit: ");
+		String unit1 = IN.next();
+		System.out.print("Enter Num: ");
+		double num2 = IN.nextDouble();
+		System.out.print("Enter Unit: ");
+		String unit2 = IN.next();
+		
+		
+	}
+}

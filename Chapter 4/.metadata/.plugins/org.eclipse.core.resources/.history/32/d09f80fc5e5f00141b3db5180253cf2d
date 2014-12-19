@@ -1,0 +1,24 @@
+import java.util.*;
+import java.io.*;
+
+public class TimeConvert 
+{
+	public static void main(String[] args) 
+	{
+		Scanner IN = new Scanner(System.in);
+		
+		System.out.printf("Enter Time1: ");
+		double Time1 = IN.nextDouble();
+		System.out.printf("Enter Time2: ");
+		double Time2 = IN.nextDouble();
+		
+		if (Time1 < Time2)
+		{
+			Double FinalTime = Time2-Time1;
+			double Finalminutes = FinalTime%100;
+			double Finalhours = FinalTime/100;
+			System.out.printf("0.0%f hours 0.2%f minutes",Finalhours,Finalminutes);
+		}
+	}
+
+}

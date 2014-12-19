@@ -1,0 +1,41 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Ellipse2D;
+
+import javax.swing.JComponent;
+
+
+
+public class DrawCirclesClass extends JComponent
+{
+	int r2;
+	int r1;
+
+	public DrawCirclesClass (double r1, double r2)
+	{
+		r1 = r1 *2;
+		r2 = r2 *2;
+	}
+	
+	public void paintComponent(Graphics g)
+	{
+		Graphics2D g2 = (Graphics2D) g;	
+		Ellipse2D.Double Circle = new Ellipse2D.Double(100, 200, r1, r1);
+		Ellipse2D.Double Circle2 = new Ellipse2D.Double(200, 100, r2, r2);
+		g2.draw(Circle2);
+		g2.draw(Circle);
+		
+		if (Circle.contains(r1, r2))
+		{
+			g2.setColor(Color.green);	
+		}
+		
+		else
+		{
+			g2.setColor(Color.RED);
+		}
+		
+		
+	}
+}

@@ -1,0 +1,18 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.Rectangle;
+
+
+public class AreaTester 
+{
+
+	public static void main(String[] args) 
+	{
+		Rectangle box = new Rectangle(5,10,20,30);
+		double width = box.getWidth();
+		double height = box.getHeight(); 
+		
+
+	}
+
+}

@@ -1,0 +1,63 @@
+import java.util.*;
+
+public class UnitConvert 
+{
+	static final double in = 39.3701;
+	static final double ft = 3.28084;
+	static final double mi = .000621371;
+	static final double mm = 1000;
+	static final double cm = 100;
+	static final double m = 1;
+	static final double km = .001;
+	
+	public static void main(String[] args) 
+	{
+		Scanner IN = new Scanner(System.in);
+		// TODO in,ft,mi,mm,cm,m,km
+		System.out.print("Enter Num: ");
+		double num1 = IN.nextDouble();
+		System.out.print("Unit From: ");
+		String unit1 = IN.next();
+		System.out.print("Unit To: ");
+		String unit2 = IN.next();
+		
+		if (unit1.equals("in"))
+		{
+			 num1 = num1 * in;
+			 System.out.print("asdf");
+		}
+		
+		if (unit1 == "ft")
+		{
+			num1 = num1 * ft;
+		}
+		
+		if (unit1 == "mi")
+		{
+			num1 = num1 * mi;
+		}
+		
+		if (unit1 == "mm")
+		{
+			num1 = num1 * mm;
+		}
+		
+		if (unit1 == "cm")
+		{
+			num1 = num1 * cm;
+		}
+		
+		if (unit1 == "m")
+		{
+			num1 = num1 * m;
+		}
+		
+		if (unit1 == "km")
+		{
+			num1 = num1 * km;
+		}
+		
+		
+		System.out.print(num1);
+	}
+}
