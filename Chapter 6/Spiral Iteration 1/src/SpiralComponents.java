@@ -15,19 +15,19 @@ public class SpiralComponents extends JComponent
 	
 	public static void drawGrid(Graphics g)
 	{
-		Graphics2D g2 = (Graphics2D) g;
+            Graphics2D g2 = (Graphics2D) g;
 	    int lane = 20;
 	    int rowCount = 20;
 	    int columnCount = 20;
 			
-		for (int row = 0; row < rowCount; row++)
-		{
-			g2.drawLine(0, row*lane, rowCount*lane, row*lane);
-		}
+	    for (int row = 0; row < rowCount; row++)
+	    {
+		g2.drawLine(0, row*lane, rowCount*lane, row*lane);
+	    }
 				
 	    for (int col = 0; col < columnCount; col++)
 	    {
-	        	g2.drawLine(col*lane,0,col*lane,columnCount*lane);
+	        g2.drawLine(col*lane,0,col*lane,columnCount*lane);
 	    }	
 	}
 	
