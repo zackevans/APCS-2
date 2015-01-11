@@ -63,8 +63,6 @@ public class SpiralComponents extends JComponent
 		g2.drawLine(240, 220, 160, 220);
 		g2.drawLine(160, 220, 160, 180);
 		g2.drawLine(160, 180, 220, 180);
-		g2.drawLine(220, 180, 220, 200);
-		g2.drawLine(220, 200, 180, 200);
 		
 	}
 
