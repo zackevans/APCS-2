@@ -13,6 +13,7 @@ public class SpiralComponents extends JComponent
 		drawSpiral(g);
 	}
 	
+	// Function NOT needed just to plot points not drawn on screen!!
 	public static void drawGrid(Graphics g)
 	{
             Graphics2D g2 = (Graphics2D) g;
