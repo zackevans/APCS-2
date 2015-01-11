@@ -1,0 +1,52 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+import javax.swing.JComponent;
+
+
+public class SpiralComponents extends JComponent
+{
+	public void paintComponent(Graphics g)
+	{
+		//drawGrid(g);
+		drawSpiral(g);
+	}
+	
+	public static void drawGrid(Graphics g)
+	{
+		Graphics2D g2 = (Graphics2D) g;
+	    int lane = 20;
+	    int rowCount = 20;
+	    int columnCount = 20;
+			
+		for (int row = 0; row < rowCount; row++)
+		{
+			g2.drawLine(0, row*lane, rowCount*lane, row*lane);
+		}
+				
+	    for (int col = 0; col < columnCount; col++)
+	    {
+	        	g2.drawLine(col*lane,0,col*lane,columnCount*lane);
+	    }	
+	}
+	
+	public void drawSpiral(Graphics g)
+	{
+		Graphics2D g2 = (Graphics2D) g;
+		g2.setColor(Color.MAGENTA);
+		g2.drawLine(360,60, 360, 340);
+		g2.drawLine(360, 340, 40, 340);
+		g2.drawLine(40, 340, 40, 60);
+		g2.drawLine(40, 60, 340, 60);
+		g2.drawLine(340, 60, 340, 320);
+		g2.drawLine(340, 320, 60, 320);
+		g2.drawLine(60, 320, 60, 80);
+		g2.drawLine(60, 80, 320, 80);
+		g2.drawLine(320, 80, 320, 300);
+		g2.drawLine(320, 300, 80, 300);
+		g2.drawLine(80, 300, 80, 100);
+		
+	}
+
+}
